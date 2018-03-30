@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Em qual estação do ano estamos?</title>
+    
+        <style>
+        body {
+            background: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 5px solid hotpink;
+            padding: 5%;
+            background-color: white;
+            color: purple;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 50px;
+        }
+        </style>
+    </head>
+
+    <body>
+        
+        <p id="qual-estacao"></p>
+
+        <script>
+            var estacao;
+            switch (new Date().getMonth()) {
+                case 0:
+                    estacao = "no verão";
+                    break;
+                case 1:
+                    estacao = "no verão";
+                    break;
+                case 2:
+                    estacao = "no verão";
+                    break;
+                case 3:
+                    estacao = "no outono";
+                    break;
+                case 4:
+                    estacao = "no outono";
+                    break;
+                case 5:
+                    estacao = "no outono";
+                    break;
+                case 6:
+                    estacao = "no inverno";
+                    break;
+                case 7:
+                    estacao = "no inverno";
+                    break;
+                case 8:
+                    estacao = "no inverno";
+                    break;
+                case 9:
+                    estacao = "na primavera";
+                    break;
+                case 10:
+                    estacao = "na primavera";
+                    break;
+                case 11:
+                    estacao = "na primavera";
+                    break;
+                default:
+                    break;
+            }
+            document.getElementById("qual-estacao").innerHTML = "Estamos " + estacao;
+        </script>
+
+    </body>
+</html>

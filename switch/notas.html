@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Consulte aqui seu desempenho na última prova!</title>
+    
+        <style>
+        body {
+            background: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 5px solid rgb(40, 40, 40);
+            padding: 3% 5%;
+            background-color: white;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 30px;
+        }
+        </style>
+    </head>
+
+    <body>
+        
+        <p id="desempenho"></p>
+
+        <script>
+            var nota;
+            nota = prompt ("Digite sua nota");
+            nota = parseInt(nota);
+            var cor;
+            function changeBackground(color) {
+                document.body.style.background=color;
+            };
+            var mensagem;
+            switch (nota) {
+                case 0:
+                    mensagem = "melhore!";
+                    cor = "red";
+                    break;
+                case 1:
+                    mensagem = "estude mais!";
+                    cor = "hsl(6, 100%, 55%)";
+                    break;
+                case 2:
+                    mensagem = "estude mais!";
+                    cor = "hsl(6, 100%, 55%)";
+                    break;
+                case 3:
+                    mensagem = "estude mais!";
+                    cor = "hsl(6, 100%, 55%)";
+                    break;
+                case 4:
+                    mensagem = "que tal um pouco  mais de esforço?";
+                    cor = "yellow";
+                    break;
+                case 5:
+                    mensagem = "que tal um pouco  mais de esforço?";
+                    cor = "yellow";
+                    break;
+                case 6:
+                    mensagem = "bom, mas podia ser </br>ainda melhor!";
+                    cor = "hsl(30, 100%, 56%)";
+                    break;
+                case 7:
+                    mensagem = "bom, mas podia ser </br>ainda melhor!";
+                    cor = "hsl(30, 100%, 56%)";
+                    break;
+                case 8:
+                    mensagem = "muito bem!";
+                    cor = "green"
+                    break;
+                case 9:
+                    mensagem = "muito bem!";
+                    cor = "green";
+                    break;
+                case 10:
+                    mensagem = "perfeito!";
+                    cor = "hsl(120, 100%, 50%)";
+                    break;
+                default:
+                    break;
+            }
+            document.getElementById("desempenho").innerHTML = mensagem;
+            changeBackground(cor);
+        </script>
+
+    </body>
+</html>

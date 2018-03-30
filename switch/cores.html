@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Qual o hexadecimal da minha cor preferida?</title>
+    
+        <style>
+        body {
+            background: white;
+        }
+        div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 8px double rgb(46, 56, 56);
+            padding: 3% 5%;
+            background-color: #DCDCDC;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 30px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p id="hexadecimal"></p>
+        </div>
+
+        <script>
+            var favColor = prompt ("Qual a sua cor preferida?", "preto");
+            var hexa;
+            function changeBackground(color) {
+                document.body.style.background=color;
+            };
+            var mensagem;
+            switch (favColor) {
+                case "preto":
+                    hexa = "#000000";
+                    mensagem = "O hexadecimal para " + favColor + " é " + hexa + ".";
+                    break;
+                case "amarelo":
+                    hexa = "#FFFF00";
+                    mensagem = "O hexadecimal para " + favColor + " é " + hexa + ".";
+                    break;
+                case "azul":
+                    hexa = "#0000FF";
+                    mensagem = "O hexadecimal para " + favColor + " é " + hexa + ".";
+                    break;
+                case "vermelho":
+                    hexa = "FF0000";
+                    mensagem = "O hexadecimal para " + favColor + " é " + hexa + ".";
+                    break;
+                case "verde":
+                    hexa = "#008000";
+                    mensagem = "O hexadecimal para " + favColor + " é " + hexa + ".";
+                    break;
+                default:
+                    mensagem = "Não temos o equivalente hexadecimal para " + favColor;
+                    break;
+            }
+            document.getElementById("hexadecimal").innerHTML = mensagem;
+            changeBackground(hexa);
+        </script>
+
+    </body>
+</html>
