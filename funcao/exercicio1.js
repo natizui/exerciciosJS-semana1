@@ -7,6 +7,8 @@ function divisao (num1, num2) {
     return num1/num2;
 };
 
-divisao (num1, num2);
 console.log(divisao(num1, num2));
+
+
+
 

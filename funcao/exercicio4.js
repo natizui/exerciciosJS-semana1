@@ -7,5 +7,4 @@ function modulo (num1, num2) {
     return num1%num2;
 };
 
-modulo (num1, num2);
 console.log(modulo(num1, num2));

@@ -7,5 +7,4 @@ function subtracao (num1, num2) {
     return num1-num2;
 };
 
-subtracao (num1, num2);
 console.log(subtracao(num1, num2));

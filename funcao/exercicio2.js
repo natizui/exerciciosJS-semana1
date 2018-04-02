@@ -7,5 +7,4 @@ function produto (num1, num2) {
     return num1*num2;
 };
 
-produto (num1, num2);
 console.log(produto(num1, num2));

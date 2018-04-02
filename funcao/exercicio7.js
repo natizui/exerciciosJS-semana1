@@ -1,9 +1,20 @@
-var x = prompt("Digite qualquer coisa")
+var x = prompt("Digite qualquer coisa");
 
-function viraChocolate(x) {
-    x="CHOCOLATE";
-    return "O valor da variável agora é " + x;
+function viraChocolate(variavel) {
+    variavel="CHOCOLATE";
+    return "O valor da variável agora é " + variavel + ".";
 };
 
-viraChocolate(x);
 console.log(viraChocolate(x));
+
+//ou
+
+var y =prompt("Digite qualquer coisa");
+
+function sobrescreva(valor) {
+    y=valor;
+    valor="CHOCOLATE";
+    return "O valor da variável agora é " + valor + ".";
+};
+
+console.log(sobrescreva(y));
