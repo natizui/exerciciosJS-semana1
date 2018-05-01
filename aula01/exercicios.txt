@@ -1,0 +1,39 @@
+// Declarar uma variável chamada `myvar`, sem valor.
+var myvar;
+
+// Após declarada, atribua o valor 100 à variável `myvar`.
+myvar = 100;
+
+// Declare uma nova variável chamada `soma`, e adicione uma instrução somando os valores 20 e 3
+var soma  =  20 + 3;
+
+// Atribua à variável `soma` todo o valor dela, somando 1, usando o operador de soma abreviado.
+soma+=1
+
+// Atribua à variável `soma` todo o valor dela, multiplicando por 3, usando o operador de multiplicação abreviado.
+soma *= 3
+
+// Qual é o valor da variável `soma` até aqui?
+72
+
+// Declare uma variável chamada `soudev`, atribuindo à ela o valor booleano que representa `verdadeiro`.
+var soudev  = true
+
+// Digite o código que verifica se a variável `soma' é igual a variável `myvar` (testando também o tipo).
+
+soma === myvar
+
+//Incremente a variável myvar 4 vezes.
+++myvar
+++myvar
+++myvar
+++myvar
+
+//Decremente a variável soma 1 vez.
+--soma
+
+//Crie uma variável chamada expo e calcule 2 elevado a 10ª potência.
+var expo = 2 ** 10
+
+// Qual é o valor da variável `expo`?
+1024

@@ -1,0 +1,3 @@
+- Aplicar Function Expression na lista de exercícios de funções da aula 03.
+
+- Analisar e aplicar const e let na lista de exercícios da Aula 02.

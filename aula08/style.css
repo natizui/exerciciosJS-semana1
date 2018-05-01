@@ -1,0 +1,10 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+	font-family: raleway;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}

@@ -1,5 +1,7 @@
 //EXERCICIO 1
-const numero = prompt('Digite um numero:');
+//se o número for maior que 13, retorne o dobro da diferença absoluta. caso contrário retorne a diferença entre 13 e o número.
+
+let numero = prompt('Digite um numero:');
 numero = parseInt(numero)
 
 if (numero > 13){
@@ -13,8 +15,10 @@ if (numero > 13){
 }
 
 //EXERCICIO 2
-const num1 = 4;
-const num2 = 5;
+//Se dois numero forem iguais, retornará o triplo da soma. Caso caso contrário calcular a soma dos dois números. 
+
+let num1 = 4;
+let num2 = 5;
 let soma = num1 + num2;
 
 if(num1 === num2){
@@ -24,6 +28,8 @@ if(num1 === num2){
 }
 
 //EXERCICIO 3
+//Escreva um programa que recebe dois números e retornar true se um dos números for 50 ou se a soma deles for 50.
+
 const num1 = 25;
 const num2 = 25;
 let soma = num1 + num2;
@@ -37,6 +43,8 @@ if(num1 === 50 || num2 === 50){
 }
 
 //EXERCICIO 4
+//Escreva um programa em JavaScript para verificar a partir de dois números, se um for positivo e um negativo. Caso os sinais sejam um diferente do outro retorna true.
+
 const num1 = 30;
 const num2 = -15;
 
@@ -45,9 +53,7 @@ if((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0)){
 }
 
 //EXERCICIO 5
-const x = 55;
-const x = 20;
-
+//Escreva um programa em JavaScript para verificar se dois valores estão no intervalo 50..99 (inclusive). Retorna true se algum deles estiver no intervalo especificado.
 if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)){
     console.log(true);
 }else{
@@ -55,9 +61,7 @@ if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)){
 }
 
 //EXERCICIO 6
-const x = 50;
-const x = 20;
-const x = 70;
+//Escreva um programa em JavaScript para verificar se três valores estão no intervalo 50..99 (inclusive). Retorna true se um ou mais deles estiverem no intervalo especificado.
 
 if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99)){
     console.log(true);
@@ -65,8 +69,7 @@ if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99)){
     console.log(false);
 }
 //EXERCICIO 7
-const x = 55;
-const x = 20;
+//Escreva um programa JavaScript que aceite dois números e exiba o maior.
 
 if(num1 > num2) { 
     console.log("O maior de " +num1+ " e " +num2+ " é " +num1+ ".");
@@ -77,6 +80,8 @@ if(num1 > num2) {
 }
 
 //EXERCICIO 8
+//Escreva uma instrução condicional JavaScript para encontrar o maior dos cinco números. Exibe uma caixa de alerta para mostrar o resultado.
+
 const a=-5;
 const b=-2;
 const c=-6;
